@@ -1,0 +1,44 @@
+<ion-content>
+  <div class="header">
+    <div class="ion-text-center">
+      <ion-title class="colortitulo">Login</ion-title>
+    </div>
+  </div>
+
+<br>
+<br>
+  <ion-card-content class="formulario">
+    <form [formGroup]="formularioLogin">
+      <div class="input">
+        <ion-label class="title">Correo</ion-label>
+        <ion-input type="text"></ion-input>
+      </div>
+      <br>
+      <div class="input">
+        <ion-label class="title">Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </div>
+      
+    </form>
+    <br>
+    <br>
+
+    <a [routerLink]="['/recuperar']"></a>
+    <ion-button [routerLink]="['/principal']"  class="btn-ingresar" >
+      Ingresar
+    </ion-button>
+
+  </ion-card-content>
+<!--Botón Recuperar contraseña-->
+<div class="container">
+<ion-footer> 
+    <ion-toolbar class="contRecPass">
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/recuperar']" class="btn-recPass" expand="block">
+          Recuperar Contraseñas
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+</div>
+</ion-content>

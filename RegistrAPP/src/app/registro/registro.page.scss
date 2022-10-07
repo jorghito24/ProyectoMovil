@@ -1,0 +1,12 @@
+ion-content{
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+    --padding-end: 10px;
+    --padding-start: 10px;
+    --ion-background-color:linear-gradient( rgba(2,0,36,1) 0%, rgb(9, 182, 153) 35%, rgb(35, 145, 153) 100%);
+    position: inherit;
+    text-align: center !important;
+  }
+  .titulo{
+    color: white;
+  }

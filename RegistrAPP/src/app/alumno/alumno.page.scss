@@ -7,3 +7,8 @@ ion-content{
     position: inherit;
     text-align: center !important;
   }
+  .container{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+  }

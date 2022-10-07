@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <ion-grid>
+  <ion-row>
+    <ion-col size = "12">
+      <ion-button (click) ="execute()" expand="block" fill="clear" shape="round">
+        Insert multiple persons
+      </ion-button>
+    </ion-col>
+  </ion-row>
+    <ion-row *ngFor ="let item of persons">
+      <ion-col size = "6">{{item.fullname}}</ion-col>
+      <ion-col size = "6">{{item.fecnac}}</ion-col>
+    </ion-row>
+ </ion-grid>
+</ion-content>
